@@ -1,0 +1,24 @@
+.carousel {
+  height: 200px;
+  min-height: 100%; }
+  .carousel .carousel-indicators li {
+    background-color: #6a7177; }
+  .carousel .carousel-inner {
+    height: 100%;
+    min-height: 100%;
+    background-color: #f0f5f7; }
+    .carousel .carousel-inner .item {
+      height: 100%;
+      min-height: 100%; }
+      .carousel .carousel-inner .item .carousel-caption .carousel_inner_text {
+        color: #6a7177;
+        text-shadow: none;
+        font-size: 13px; }
+      .carousel .carousel-inner .item .carousel-caption h6 {
+        color: #6a7177;
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        text-shadow: none; }
+      .carousel .carousel-inner .item .carousel-caption p {
+        color: #a9b6c1;
+        text-shadow: none; }

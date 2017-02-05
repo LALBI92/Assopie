@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Page introuvable</title>
+	<meta name="description" content="Page introuvable ! URL Incorrecte">
+	<meta name="keywords" content="France Immobilier, Immobilier neuf, Logement neuf, Appartement neuf, Acheter logement neuf, Programme immobilier neuf, Immo neuf, Maison neuve, Investir, Habiter, Se loger, Défiscaliser, Défiscalisation, Acheter immobilier, Duflot, Trouver un logement neuf">
+	<meta name="author" content="1Clic-1Toit">
+	<link rel="author" href="https://plus.google.com/+1clic-1toit" >
+	<link rel="publisher" href="https://plus.google.com/+1clic-1toit" >
+
+    
+    <meta name="viewport" content="width=320, initial-scale=0.5">
+    <meta name="viewport" content="width=360, initial-scale=0.5">
+    <meta name="viewport" content="width=480, initial-scale=0.5">
+    <meta name="viewport" content="width=640, initial-scale=0.5">
+	<link rel="icon" type="image/png" href="http://www.1clic-1toit.com/assets/img/neuf.png" >
+	
+	
+	<style type="text/css" data-cfasync='true'>
+		@font-face {
+		    font-family: 'poetsen_oneregular';
+		    src: url('http://www.1clic-1toit.com/assets/fonts/poetsenone-regular-webfont.eot');
+		    src: url('http://www.1clic-1toit.com/assets/fonts/poetsenone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('http://www.1clic-1toit.com/assets/fonts/poetsenone-regular-webfont.woff') format('woff'),
+		         url('http://www.1clic-1toit.com/assets/fonts/poetsenone-regular-webfont.ttf') format('truetype'),
+		         url('http://www.1clic-1toit.com/assets/fonts/poetsenone-regular-webfont.svg#poetsen_oneregular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+	</style>
+
+	        <link rel="stylesheet" type="text/css" media="screen" href="http://www.1clic-1toit.com/assets/css/bootstrap.css" data-cfasync='true'>
+	        <link rel="stylesheet" type="text/css" media="screen" href="http://www.1clic-1toit.com/assets/css/bootstrap-responsive.css" data-cfasync='true'>
+	        <link rel="stylesheet" type="text/css" media="screen" href="http://www.1clic-1toit.com/assets/css/chosen.min.css" data-cfasync='true'>
+	        <link rel="stylesheet" type="text/css" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300" data-cfasync='true'>
+	        <link rel="stylesheet" type="text/css" media="screen" href="http://www.1clic-1toit.com/assets/css/bootstrap-fileupload.min.css" data-cfasync='true'>
+	        <link rel="stylesheet" type="text/css" media="screen" href="http://www.1clic-1toit.com/assets/css/jquery-ui-1.10.2.custom.min.css" data-cfasync='true'>
+	        <link rel="stylesheet" type="text/css" media="screen" href="http://www.1clic-1toit.com/assets/css/1clic-1toit-blue.css" data-cfasync='true'>
+	        <link rel="stylesheet" type="text/css" media="screen" href="http://www.1clic-1toit.com/assets/css/tables.min.css" data-cfasync='true'>
+	        <link rel="stylesheet" type="text/css" media="screen" href="http://www.1clic-1toit.com/assets/css/menu3.css" data-cfasync='true'>
+	        <link rel="stylesheet" type="text/css" media="screen" href="http://www.1clic-1toit.com/assets/css/sliderkit.min.css" data-cfasync='true'>
+	
+			<script type="text/javascript" src="http://www.1clic-1toit.com/assets/javascript/jquery.js" data-cfasync='true'></script>
+			<script type="text/javascript" src="http://www.1clic-1toit.com/assets/javascript/jquery.ezmark.js" data-cfasync='true'></script>
+			<script type="text/javascript" src="http://www.1clic-1toit.com/assets/javascript/jquery.currency.js" data-cfasync='true'></script>
+			<script type="text/javascript" src="http://www.1clic-1toit.com/assets/javascript/bootstrap.min.js" data-cfasync='true'></script>
+			<script type="text/javascript" src="http://www.1clic-1toit.com/assets/javascript/carousel.js" data-cfasync='true'></script>
+			<script type="text/javascript" src="http://www.1clic-1toit.com/assets/libraries/jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js" data-cfasync='true'></script>
+			<script type="text/javascript" src="http://www.1clic-1toit.com/assets/javascript/chosen.jquery.js" data-cfasync='true'></script>
+			<script type="text/javascript" src="http://www.1clic-1toit.com/assets/javascript/jquery.lightbox_me.min.js" data-cfasync='true'></script>
+			<script type="text/javascript" src="http://www.1clic-1toit.com/assets/javascript/external/jquery.easing.1.3.min.js" data-cfasync='true'></script>
+			<script type="text/javascript" src="http://www.1clic-1toit.com/assets/javascript/external/jquery.mousewheel.min.js" data-cfasync='true'></script>
+			<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.js" data-cfasync='true'></script>
+			<script type="text/javascript" src="http://www.1clic-1toit.com/assets/javascript/init.js" data-cfasync='true'></script>
+		
+	<script type="text/javascript">
+		
+		function save_newsletter(){
+
+			var adresse_mail = $('#mail_newsletter').val();
+
+			$.ajax({
+				url: "http://www.1clic-1toit.com/index/inscription_newsletter/",
+				type: 'POST',
+				async : false,
+				data: {adresse_mail : adresse_mail},
+				success: function(msg){
+					$('#resultat_newsletter').html(msg);
+				}
+			});
+		}
+
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-49857276-1', 'immobilierneuf1clic1toit.fr');
+	  ga('send', 'pageview');
+	</script>    
+	
+</head>
+<body>
+<div id="wrapper-outer" >
+    <div id="wrapper">
+        <div id="wrapper-inner">
+            <!-- BREADCRUMB -->
+            <div class="breadcrumb-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            
+							
+							<ul class="breadcrumb pull-left">
+                                <li>
+                                	<a href="http://www.1clic-1toit.com/">Accueil</a>|
+                                	<a href="http://www.1clic-1toit.com/MaSelection">Ma sélection</a>
+                                </li>
+                            </ul><!-- /.breadcrumb -->
+							
+														
+                            <div class="account pull-right">
+                                <ul class="nav nav-pills">
+																		<li><a href="http://www.1clic-1toit.com/Connexion"><img src="http://www.1clic-1toit.com/assets/img/accession.png" style="margin-right:5px; width:16px" alt="maisons et appartements de standing. Toutes les annonces immobilières en ligne" title="Connexion à votre espace membre">Connexion</a></li>
+                                    <li><a href="http://www.1clic-1toit.com/Inscription"><img src="http://www.1clic-1toit.com/assets/img/LmpLmnp.png" style="margin-right:5px; width:16px" alt="actualité immobilière, simulateur crédit et baromètre des taux d'emprunt, pour gérer au mieux votre investissement immobilier." title="Inscription à l'espace membre">S'inscrire</a></li>
+									                                </ul>
+                            </div>
+							
+                        </div><!-- /.span12 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.breadcrumb-wrapper -->
+            <div id="header-wrapper">
+                <div id="header">
+                    <div id="header-inner">
+                        <div class="container">
+                            <div class="navbar">
+                                <div class="navbar-inner">
+                                    <div class="row">
+                                        <div class="logo-wrapper header-adjust">                                     
+                                            <div class="logo">
+                                                <a href="http://www.1clic-1toit.com/">
+                                                    <img class="logo" src="http://www.1clic-1toit.com/assets/img/construction.png" title="investir défiscaliser dans l'achat d'une maison neuve ou d'un appartement neuf grâce au programme immobilier, 1clic 1toit des prix et conditions promoteur" alt="investir défiscaliser dans l'achat d'une maison neuve ou d'un appartement neuf grâce au programme immobilier, 1clic 1toit des prix et conditions promoteur">
+                                                </a>
+                                            </div>
+                                            <div class="site-name">
+                                                <a href="http://www.1clic-1toit.com/" class="brand">1 Clic - 1 Toit</a>
+                                            </div>
+
+                                            <div class="site-slogan0">
+                                            	<div class="site-slogan">
+                                                    <h2>Des biens aux prix et conditions promoteurs !</h2><br>
+                                                    <h2 class="slogan_h2_second">Pour investir ou se loger, un conseiller proche de chez vous</h2>
+                                                </div>
+                                            </div>
+
+			                                <div>
+												<a class="list-your-property phone" href="http://www.1clic-1toit.com/PrendreContact"><img src="http://www.1clic-1toit.com/assets/img/PlacementImmobilier.png" title="un professionnel de l'immobilier vous répond" alt="sélection d'agences immobilières proposant des programmes neufs" style="width:100px; height:110px"></a>
+		                                    </div>
+
+                                            <div>
+                                            	<a class="list-your-property phone" href="http://www.1clic-1toit.com/PrendreContact"><span>Être contacté<br>rapidement<br><br>02 97 30 30 00</span></a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- NAVIGATION -->
+            <div id="navigation">
+                <div class="container">
+
+                    <div class="menu style-1">
+                    	<a href="#" id="pull">Menu</a>
+					    <ul class="menu">
+
+					        <li class="active"><a href="http://www.1clic-1toit.com/" >ACCUEIL</a></li>
+
+					        <li class=""><a href="http://www.1clic-1toit.com/BienImmobilier"><span style="float:left">BIEN IMMOBILIER</span><div class="arrow_menu"></div><div style="clear:both"></div></a>
+
+					            <div class="mega-menu middle-width">
+
+					                <div class="left col-2">
+					                    <a class="title-menu" href="http://www.1clic-1toit.com/AppartementNeuf"><h4>APPARTEMENT NEUF</h4></a>
+					                    <ol>
+	                						<li><a class="link" href="http://www.1clic-1toit.com/AppartementNeuf/DisponibleMoins3Mois">Disponible en moins de 3 mois</a></li>
+											<li><a class="link" href="http://www.1clic-1toit.com/AppartementNeuf/DisponibleEntre3Et6Mois">Disponible entre 3 et 6 mois</a></li>
+											<li><a class="link" href="http://www.1clic-1toit.com/AppartementNeuf/RentablePlus4Pourcent">Rentabilité supérieure à 4 %</a></li>
+											<li><a class="link" href="http://www.1clic-1toit.com/AppartementNeuf/Opportunites">Opportunités</a></li>
+	                					</ol>
+	                					<div style="clear:both"></div><br>
+	                					<a class="title-menu" href="http://www.1clic-1toit.com/ResidenceNeuve"><h4>RÉSIDENCE NEUVE À THÈME</h4></a>
+					                    <ol>
+					                    	<li><a class="link" href="http://www.1clic-1toit.com/ResidenceAffaireNeuve">Résidence Affaire Neuve</a></li>
+                                            <li><a class="link" href="http://www.1clic-1toit.com/ResidenceEtudiantNeuve">Résidence Étudiante Neuve</a></li>
+                                            <li><a class="link" href="http://www.1clic-1toit.com/ResidenceSeniorNeuve">Résidence Senior Neuve</a></li>
+                                            <li><a class="link" href="http://www.1clic-1toit.com/ResidenceTourismeNeuve">Résidence Tourisme Neuve</a></li>
+	                					</ol>
+					                </div>
+					                
+					                <div class="left col-2">
+					                	<a class="title-menu" href="http://www.1clic-1toit.com/MaisonNeuve"><h4>MAISON NEUVE</h4></a>
+					                    <ol>
+					                    	<li><a class="link" href="http://www.1clic-1toit.com/MaisonNeuve/DisponibleMoins3Mois">Disponible en moins de 3 mois</a></li>
+                                            <li><a class="link" href="http://www.1clic-1toit.com/MaisonNeuve/DisponibleEntre3Et6Mois">Disponible entre 3 et 6 mois</a></li>
+                                            <li><a class="link" href="http://www.1clic-1toit.com/MaisonNeuve/RentablePlus4Pourcent">Rentabilité supérieure à 4 %</a></li>
+                                            <li><a class="link" href="http://www.1clic-1toit.com/MaisonNeuve/Opportunites">Opportunités</a></li>
+	                					</ol>
+	                					<div style="clear:both"></div><br>
+	                					<a class="title-menu" href="http://www.1clic-1toit.com/AutreTypeBienNeuf"><h4>AUTRE TYPE DE BIEN NEUF</h4></a>
+					                    <ol>
+					                    	<li><a class="link" href="http://www.1clic-1toit.com/BureauNeuf">Bureau Neuf</a></li>
+					                    	<li><a class="link" href="http://www.1clic-1toit.com/LocalCommercialNeuf">Local commercial Neuf</a></li>
+					                    	<li><a class="link" href="http://www.1clic-1toit.com/Terrain">Terrain</a></li>
+					                    	<li><a class="link" href="http://www.1clic-1toit.com/ParkingNeuf">Parking, Box, ..</a></li>
+	                					</ol>
+					                </div>
+
+					                <div class="right" style="text-align:right;width:190px">
+										<img style="width:170px; height:170px" title="Disponibilité d'appartements, villas, résidences avec espace vert, immeubles au style contemporain" alt="investissement immobilier, défiscaliser Duflot, appartements, lofts et villas, résidences à thème, parking" src="http://www.1clic-1toit.com/assets/img/Immo.jpg">
+									</div>
+					                
+					            </div>
+					        </li>
+
+					        <li class=""><a href="http://www.1clic-1toit.com/FinancerVotreProjet"><span style="float:left">FINANCER VOTRE PROJET</span><div class="arrow_menu"></div><div style="clear:both"></div></a>
+
+					            <div class="mega-menu middle-width">
+
+					            	<div class='left col-2'>
+	                					<a class="title-menu" href="http://www.1clic-1toit.com/FinancerVotreProjet/EtapesDeVotreProjet"><h4>LES ÉTAPES DE VOTRE PROJET</h4></a>
+	                					<ol>
+	                						<li><a class="link" style="font-size:13px" href="http://www.1clic-1toit.com/FinancerVotreProjet/EtapesDeVotreProjet/RechercheARemiseClefs">De la recherche à la remise des clefs</a></li>
+											<li><a class="link" href="http://www.1clic-1toit.com/FinancerVotreProjet/EtapesDeVotreProjet/ComparatifLoisFiscales">Comparatif lois fiscales</a></li>
+	                					</ol>
+	                					<div style="clear:both"></div><br>
+
+	                					<a class="title-menu" href="http://www.1clic-1toit.com/FinancerVotreProjet/EmpruntBancaire"><h4>EMPRUNT BANCAIRE</h4></a>
+	                					<ol>
+	                						<li><a class="link" style="font-size:13px" href="http://www.1clic-1toit.com/FinancerVotreProjet/EmpruntBancaire/CreditsEtTaux">Différents crédits et taux disponibles</a></li>
+											<li><a class="link" href="http://www.1clic-1toit.com/FinancerVotreProjet/EmpruntBancaire/SimulateurPret">Simuler votre prêt</a></li>
+	                					</ol>
+	                				</div>
+	                				<div class='left col-2-5'>
+	                					<a class="title-menu" href="http://www.1clic-1toit.com/FinancerVotreProjet/InvestissementLocatif"><h4>INVESTISSEMENT LOCATIF</h4></a>
+	                					<ol>
+	                						<li><a class="link" href="http://www.1clic-1toit.com/FinancerVotreProjet/InvestissementLocatif/AcheterEnSCI">Acheter en SCI</a></li>
+											<li><a class="link" style="font-size:13px" href="http://www.1clic-1toit.com/FinancerVotreProjet/InvestissementLocatif/GestionChargeLocativeEvolutionLoyer">Placer en gestion, charge locative et évolution du loyer</a></li>
+	                					</ol>
+	                				</div>
+	                				<div class='right' style="text-align:right; width:190px;">
+	                					<img src="http://www.1clic-1toit.com/assets/img/PretImmobilier.jpg" style="width:170px; height:170px;" alt="1Clic-1Toit met à votre disposition tous les outils, conseils et simulateur pour financer votre projet immobilier." title="Financement de votre projet d'acquisition immobilière" >
+	                				</div>
+					                
+					            </div>
+					        </li>
+					        <li class=""><a href="http://www.1clic-1toit.com/Agence">AGENCES</a></li>
+					        <li class=""><a href="http://www.1clic-1toit.com/Actualites"><span style="float:left">ACTUALITÉS</span><div class="arrow_menu"></div><div style="clear:both"></div></a>
+								<div class="mega-menu little-width">
+	                				<div class="left col-2" style="margin-top:25px">
+	                					<ol>
+	                                											<li>
+						                    <a href="http://www.1clic-1toit.com/Actualites/FiscaliteInvestissement" class="link">
+						                    	Fiscalité, Investissement						                    </a>
+						                </li>
+	                                											<li>
+						                    <a href="http://www.1clic-1toit.com/Actualites/MarcheImmobilier" class="link">
+						                    	Marché de l’immobilier						                    </a>
+						                </li>
+	                                											<li>
+						                    <a href="http://www.1clic-1toit.com/Actualites/ConseilsPratiques" class="link">
+						                    	Conseils pratiques						                    </a>
+						                </li>
+	                                											<li>
+						                    <a href="http://www.1clic-1toit.com/Actualites/LesPartenaires" class="link">
+						                    	Les partenaires						                    </a>
+						                </li>
+	                                											<li>
+						                    <a href="http://www.1clic-1toit.com/Actualites/OffresCommerciales" class="link">
+						                    	Offres commerciales						                    </a>
+						                </li>
+	                                											<li>
+						                    <a href="http://www.1clic-1toit.com/Actualites/ArticlesDePresse" class="link">
+						                    	Articles de presse						                    </a>
+						                </li>
+	                                											<li>
+											<a href="http://1clic1toit.blogspot.fr" class="link" target="_blank">Le blog</a>
+										</li>
+										</ol>
+									</div>
+									<div class='right' style="text-align:right; width:190px;height:200px">
+	                					<img src="http://www.1clic-1toit.com/assets/img/ActualitesMarcheImmobilier.jpg" style="width:170px; height:170px;" alt="Actualités de l'immobilier, offres commerciales, promotions immobilières, conseils pratiques" title="Découvrez les actualités du marché immobilier" >
+	                				</div>
+					            </div>
+					        </li>
+					        <li class=""><a href="http://www.1clic-1toit.com/Contact">CONTACT</a></li>
+
+					        <li class="right2">
+								<a class="no_hover" style="color:white; text-decoration:none;">
+									477 Programmes dont 6414 Lots								</a>
+							</li>
+					    </ul>
+                        <!--</div> /.navigation -->
+                    <!--</div> /.navigation-wrapper -->
+                	</div>
+                </div><!-- /.container -->
+            </div><!-- /.navigation -->
+
+    		<div id="content"><div class="container">
+    <div id="main">
+        <div class="not-found">
+            <strong>404</strong>
+            <h1>La page demandée n'a pas été trouvée.</h1>
+            <hr>
+            
+            <p>
+                <a href="http://www.1clic-1toit.com/">Retour à l'accueil</a>
+            </p>
+            <br/><br/>
+            <h1 class="page-header" style="text-align:center; font-weight:bold">Programmes immobiliers neufs en France :</h1>
+            <div class="properties-grid">
+                <div class="row">
+                                                    <div class="property span3">
+                                    <div class="image">
+                                        <div class="content">
+                                            <a href="http://www.1clic-1toit.com/AppartementNeuf/RhoneAlpes/Savoie(haute)/74370/SaintMartinBellevue/AuFilDeLO"></a>
+                                            <img src="http://www.1clic-1toit.com/assets/pictures/programme/913/ImmobilierAuFilDeLO.jpg" alt="Au Fil de l'Ô" style="width:320px;height:200px">
+                                                                                            </div>
+
+                                        <div class="price">9 Lot(s)</div>
+
+                                                                                        <div class="reduced">
+                                                T3 à T4                                                </div>
+                                                                                    </div>
+                                    <div class="title" style="display:inline">
+                                                                                <h2 class="agences"><a href="http://www.1clic-1toit.com/AppartementNeuf/RhoneAlpes/Savoie(haute)/74370/SaintMartinBellevue/AuFilDeLO"><span style="display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">Au Fil de l'Ô</span></a></h2>
+                                    </div>
+                                    <div class="location">
+                                    <div style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">Lieu dit le Vernog</div><div style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">74370 - SAINT MARTIN BELLEVUE</div>Savoie (Haute)                                    </div>
+                                    <div class="area">
+                                        <span class="key">
+                                            À partir de 246 000€                                        </span><!-- /.key -->
+                                    </div><!-- /.area -->
+                                    <div style="clear:both"></div>
+                                    <div class="link_grid"><div class="content"><a href="http://www.1clic-1toit.com/AppartementNeuf/RhoneAlpes/Savoie(haute)/74370/SaintMartinBellevue/AuFilDeLO">Plus de détails</a></div></div><!-- /.bedrooms -->
+                                </div>
+                                                                <div class="property span3">
+                                    <div class="image">
+                                        <div class="content">
+                                            <a href="http://www.1clic-1toit.com/AppartementNeuf/PaysDeLaLoire/LoireAtlantique/44470/Carquefou/CoeurDesArts"></a>
+                                            <img src="http://www.1clic-1toit.com/assets/pictures/programme/55/ImmobilierCoeurDesArts." alt="Coeur des Arts" style="width:320px;height:200px">
+                                                                                            </div>
+
+                                        <div class="price">2 Lot(s)</div>
+
+                                                                                        <div class="reduced">
+                                                T3                                                </div>
+                                                                                    </div>
+                                    <div class="title" style="display:inline">
+                                                                                <h2 class="agences"><a href="http://www.1clic-1toit.com/AppartementNeuf/PaysDeLaLoire/LoireAtlantique/44470/Carquefou/CoeurDesArts"><span style="display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">Coeur des Arts</span></a></h2>
+                                    </div>
+                                    <div class="location">
+                                    <div style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">2-2BIS-2TERRUE DE L'HOTEL DE VILLE</div><div style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">44470 - CARQUEFOU</div>Loire Atlantique                                    </div>
+                                    <div class="area">
+                                        <span class="key">
+                                            À partir de 238 000€                                        </span><!-- /.key -->
+                                    </div><!-- /.area -->
+                                    <div style="clear:both"></div>
+                                    <div class="link_grid"><div class="content"><a href="http://www.1clic-1toit.com/AppartementNeuf/PaysDeLaLoire/LoireAtlantique/44470/Carquefou/CoeurDesArts">Plus de détails</a></div></div><!-- /.bedrooms -->
+                                </div>
+                                                                <div class="property span3">
+                                    <div class="image">
+                                        <div class="content">
+                                            <a href="http://www.1clic-1toit.com/AppartementNeuf/ProvenceAlpesCoteDazur/AlpesMaritimes/06700/StLaurentDuVar/CoeurLaurentin"></a>
+                                            <img src="http://www.1clic-1toit.com/assets/pictures/programme/81/ImmobilierCoeurLaurentin." alt="Coeur Laurentin" style="width:320px;height:200px">
+                                                                                            </div>
+
+                                        <div class="price">7 Lot(s)</div>
+
+                                                                                        <div class="reduced">
+                                                T1 à T3                                                </div>
+                                                                                    </div>
+                                    <div class="title" style="display:inline">
+                                                                                <h2 class="agences"><a href="http://www.1clic-1toit.com/AppartementNeuf/ProvenceAlpesCoteDazur/AlpesMaritimes/06700/StLaurentDuVar/CoeurLaurentin"><span style="display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">Coeur Laurentin</span></a></h2>
+                                    </div>
+                                    <div class="location">
+                                    <div style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">198, AVENUE DES PIGNATIÈRES</div><div style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">6700 - ST LAURENT DU VAR</div>Alpes Maritimes                                    </div>
+                                    <div class="area">
+                                        <span class="key">
+                                            À partir de 197 000€                                        </span><!-- /.key -->
+                                    </div><!-- /.area -->
+                                    <div style="clear:both"></div>
+                                    <div class="link_grid"><div class="content"><a href="http://www.1clic-1toit.com/AppartementNeuf/ProvenceAlpesCoteDazur/AlpesMaritimes/06700/StLaurentDuVar/CoeurLaurentin">Plus de détails</a></div></div><!-- /.bedrooms -->
+                                </div>
+                                                                <div class="property span3">
+                                    <div class="image">
+                                        <div class="content">
+                                            <a href="http://www.1clic-1toit.com/AppartementNeuf/MidiPyrenees/Garonne(haute)/31140/Aucamville/ConfidenceUrbaine"></a>
+                                            <img src="http://www.1clic-1toit.com/assets/pictures/programme/376/ImmobilierConfidenceUrbaine." alt="Confidence Urbaine" style="width:320px;height:200px">
+                                                                                            </div>
+
+                                        <div class="price">37 Lot(s)</div>
+
+                                                                                        <div class="reduced">
+                                                T1 à T4                                                </div>
+                                                                                    </div>
+                                    <div class="title" style="display:inline">
+                                                                                <h2 class="agences"><a href="http://www.1clic-1toit.com/AppartementNeuf/MidiPyrenees/Garonne(haute)/31140/Aucamville/ConfidenceUrbaine"><span style="display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">Confidence Urbaine</span></a></h2>
+                                    </div>
+                                    <div class="location">
+                                    <div style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">RUE ANDRE RESTES</div><div style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 240px;">31140 - AUCAMVILLE</div>Garonne (Haute)                                    </div>
+                                    <div class="area">
+                                        <span class="key">
+                                            À partir de 155 000€                                        </span><!-- /.key -->
+                                    </div><!-- /.area -->
+                                    <div style="clear:both"></div>
+                                    <div class="link_grid"><div class="content"><a href="http://www.1clic-1toit.com/AppartementNeuf/MidiPyrenees/Garonne(haute)/31140/Aucamville/ConfidenceUrbaine">Plus de détails</a></div></div><!-- /.bedrooms -->
+                                </div>
+                                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>            </div>
+        </div>
+
+        <div id="footer-wrapper">
+            <div id="footer-top">
+                <div id="footer-top-inner" class="container">
+                    <div class="row">
+                        <div class="widget properties span4">
+                            <div class="title">
+                                <h2>Top 10 des recherches</h2>
+                            </div>
+                            <div class="content span4" style="margin-left:0px">
+                                <a class="link_top_recherche" href="http://www.1clic-1toit.com/AppartementNeuf/RhoneAlpes/Rhone">Appartement Neuf Rhône</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/AppartementNeuf/ProvenceAlpesCoteDazur/BouchesDuRhone">Appartement Neuf Bouches du Rhône</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/AppartementNeuf/IleDeFrance/HautsDeSeine">Appartement Neuf Hauts de Seine</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/AppartementNeuf/MidiPyrenees/Garonne(haute)">Appartement Neuf Garonne (Haute)</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/AppartementNeuf/PaysDeLaLoire/LoireAtlantique">Appartement Neuf Loire Atlantique</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/AppartementNeuf/Aquitaine/Gironde">Appartement Neuf Gironde</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/AppartementNeuf/ProvenceAlpesCoteDazur/Var">Appartement Neuf Var</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/AppartementNeuf/IleDeFrance/ValDeMarne">Appartement Neuf Val de Marne</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/AppartementNeuf/ProvenceAlpesCoteDazur/AlpesMaritimes">Appartement Neuf Alpes Maritimes</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/AppartementNeuf/IleDeFrance/Essonne">Appartement Neuf Essonne</a><br>                            </div>
+                        </div>
+                        <div class="widget span4">
+                            <div class="title">
+                                <h2>Nous contacter</h2>
+                            </div>
+                            <div class="content">
+                                <table class="contact" style="margin-bottom:0px">
+                                    <tbody>
+                                    <tr>
+                                        <th class="address">Adresse:</th>
+                                        <td>33 route de l'Océan<br>56470 Saint Philibert<br>FRANCE<br></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="phone">Téléphone:</th>
+                                        <td>02 97 30 30 00</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="email">E-mail:</th>
+                                        <td><img src="http://www.1clic-1toit.com/assets/img/mandat.png" alt="Contact services 1Clic-1Toit, adresse mail de mise en relation" title="Contactez les services 1Clic-1Toit par mail"></td>
+                                    </tr>
+                                    <!--<tr>
+                                        <th class="gps">GPS:</th>
+                                        <td>47.579326<br>-3.011319</td>
+                                    </tr>-->
+
+                                    </tbody>
+                                </table>
+                                Inscrivez vous à notre newsletter<br>
+                                
+                                
+                                <div id="inscription_newsletter" style="margin-top:10px">
+                                <input type="text" style="width:200px" id="mail_newsletter" name="mail_newsletter">
+                                <input type="button" class="btn btn-primary" value="OK" onclick="save_newsletter();">
+                                </div>
+                                <div id="resultat_newsletter" style="margin-top:5px"></div>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="widget span4">
+                            <div class="title">
+                                <h2 class="block-title">Liens utiles</h2>
+                            </div>
+                            <div class="content span2" style="margin-left:0px; padding-right:0px">
+                                <ul class="menu nav">
+                                    <li class="first leaf"><a href="http://www.1clic-1toit.com/">Accueil</a></li>
+                                    <li class="leaf"><a href="http://www.1clic-1toit.com/BienImmobilier">Bien immobilier</a></li>
+                                    <li class="leaf reduced-label"><a href="http://www.1clic-1toit.com/FinancerVotreProjet">Financer votre projet</a></li>
+                                    <li class="leaf"><a href="http://www.1clic-1toit.com/Agence">Agences</a></li>
+                                    <li class="leaf"><a href="http://www.1clic-1toit.com/Actualites">Actualités</a></li>
+                                    <li class="leaf"><a href="http://www.1clic-1toit.com/Partenariats">Partenariats</a></li>
+                                    <li class="leaf reduced-label"><a href="http://www.1clic-1toit.com/PropositionTerrain" style="letter-spacing:-0.5px">Proposer un terrain</a></li> 
+                                </ul>
+                            </div>
+                            <div class="content span2" style="margin-left:10px">
+                                <ul class="menu nav">
+                                    <li class="leaf"><a href="http://www.1clic-1toit.com/DevenirPartenaire">Devenir partenaire</a></li> 
+                                    <li class="leaf"><a href="http://www.1clic-1toit.com/APropos">A propos</a></li> 
+                                    <li class="last leaf"><a href="http://www.1clic-1toit.com/MentionsLegales">Mentions légales</a></li>
+                                    <li class="last leaf"><a href="http://www.1clic-1toit.com/Site-Map">Sitemap</a></li>
+                                    <li class="leaf"><a href="http://www.1clic-1toit.com/Contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="widget properties span6">
+                            <div class="title">
+                                <h2>Recherche par région</h2>
+                            </div>
+
+                            <div class="content span3" style="margin-left:0px">
+                            <a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/Alsace">Immobilier Alsace</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/Aquitaine">Immobilier Aquitaine</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/Auvergne">Immobilier Auvergne</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/BasseNormandie">Immobilier Basse-Normandie</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/Bourgogne">Immobilier Bourgogne</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/Bretagne">Immobilier Bretagne</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/Centre">Immobilier Centre</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/ChampagneArdenne">Immobilier Champagne Ardenne</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/Corse">Immobilier Corse</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/DomTom">Immobilier DOM-TOM</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/FrancheComte">Immobilier Franche Comté</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/HauteNormandie">Immobilier Haute Normandie </a><br>                                        </div>
+                                        <div class="content span3" style="margin-left:0px">
+                                        <a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/IleDeFrance">Immobilier Ile de France</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/LanguedocRoussillon">Immobilier Languedoc Roussillon</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/Limousin">Immobilier Limousin</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/Lorraine">Immobilier Lorraine</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/MidiPyrenees">Immobilier Midi Pyrénées</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/NordPasDeCalais">Immobilier Nord Pas de Calais</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/PaysDeLaLoire">Immobilier Pays de la Loire</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/Picardie">Immobilier Picardie</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/PoitouCharentes">Immobilier Poitou Charentes</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/ProvenceAlpesCoteDazur">Immobilier Provence Alpes Côte d'azur</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/RhoneAlpes">Immobilier Rhône Alpes</a><br>                            </div>
+                        </div>
+                       
+                        <div class="widget properties span6">
+                            <div class="title">
+                                <h2>Recherche par ville</h2>
+                            </div>
+
+                            <div class="content span3" style="margin-left:0px">
+                            <a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Toulouse&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Toulouse</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Lyon&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Lyon</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Aix-en-provence&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Aix-en-provence</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Strasbourg&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Strasbourg</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Paris&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Paris</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Bordeaux&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Bordeaux</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Marseille&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Marseille</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Nantes&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Nantes</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Bayonne&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Bayonne</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Asnieres-sur-seine&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Asnieres-sur-seine</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Venissieux&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Venissieux</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Orleans&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Orleans</a><br>                                        </div>
+                                        <div class="content span3" style="margin-left:0px">
+                                        <a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Montpellier&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Montpellier</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Aubervilliers&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Aubervilliers</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Meyzieu&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Meyzieu</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Poissy&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Poissy</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Rouen&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Rouen</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Taverny&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Taverny</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Noisy-le-sec&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Noisy-le-sec</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Nancy&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Nancy</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Ostwald&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Ostwald</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Villeurbanne&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Villeurbanne</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Rennes&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Rennes</a><br><a class="link_top_recherche" href="http://www.1clic-1toit.com/BienImmobilier/recherche?mode_recherche=simple&ou_acheter=Melun&rayon=5&type_bien=0&prix_min=&prix_max=&fiscalite=0&rentabilite=0&disponibilite=0">Immobilier Melun</a><br>                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer" class="footer container">
+                <div id="footer-inner">
+                    <div class="row">
+
+                        <div class="span6 copyright">
+                            <p><a href="http://mobile.immobilierneuf1clic1toit.fr" style="color:white">
+                                <img src="http://www.1clic-1toit.com/assets/img/VersionMobile.png">
+                                <span style="margin:2px">Version mobile</span>
+                            </a></p>
+                            <p style="margin-top:10px">© Copyright 2013-2014 <a href="http://www.1clic-1toit.com/MentionsLegales">1 Clic - 1 Toit</a>. Tous droits reservés.</p>
+                        </div>
+
+                        <div class="span6 share">
+                            <div class="content">
+                                <ul class="menu nav">
+                                    <li class="first leaf"><a target="_blank" href="http://www.1clic-1toit.com/rss/rss.xml" class="rss" title="Suivez 1Clic-1Toit via Flux RSS">Flux RSS</a></li>
+                                    <li class="leaf"><a target="_blank" href="http://1clic1toit.blogspot.fr" class="blogger" title="Suivez 1Clic-1Toit sur Blogger">Blogger</a></li>
+                                    <li class="leaf"><a target="_blank" href="https://www.facebook.com/1clic1toit?fref=ts" class="facebook" title="Suivez 1Clic-1Toit sur Facebook">Facebook</a></li>
+                                    <li class="leaf"><a target="_blank" href="https://twitter.com/1clic1toit" class="twitter" title="Suivez 1Clic-1Toit sur Twitter">Twitter</a></li>
+                                    <li class="leaf"><a target="_blank" href="https://plus.google.com/104328485556897268982" rel="publisher" class="google" title="Suivez 1Clic-1Toit sur Google+">Google+</a></li>
+                                    <li class="leaf"><a target="_blank" href="http://www.linkedin.com/company/1clic-1toit?trk=top_nav_home" class="linkedin" title="Suivez 1Clic-1Toit sur LinkedIn">LinkedIn</a></li>
+                                    <li class="last leaf"><a target="_blank" href="http://www.viadeo.com/v/company/1clic-1toit" class="viadeo" title="Suivez 1Clic-1Toit sur Viadeo">Viadeo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+var LHCChatOptions = {};
+LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500};
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+var refferer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
+var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+po.src = '//immobilierneuf1clic1toit.fr/livehelperchat-master/lhc_web/index.php/fre/chat/getstatus/(click)/internal/(position)/bottom_right/(top)/350/(units)/pixels/(theme)/1?r='+refferer+'&l='+location;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+
+
+$(window).scroll(function() {
+    $('#programmes_cookie').toggle($(this).scrollTop() > 100);
+});
+
+$(function() {
+    var pull        = $('#pull');
+        menu        = $('.menu ul');
+        menuHeight  = menu.height();
+
+    $(pull).click(function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+
+    $(window).resize(function(){
+        var w = $(window).width();
+        if(w > 320 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+        }
+    });
+});
+
+function switch_mode_responsive(value){
+
+    $.ajax({
+        url: "http://www.1clic-1toit.com/residences_immobilieres/switch_mode_responsive/"+value,
+        type: 'POST',
+        async : false,
+        success: function(msg){
+            
+            if(msg == '1'){
+                document.location.href = document.location;
+            } else {
+                
+            }
+        }
+    });
+}
+
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+if( isMobile.any() ) $('#bouton_switch_mode_responsive').show();
+
+</script>
+
+</body>
+</html>
+

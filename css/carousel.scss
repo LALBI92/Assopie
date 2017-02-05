@@ -1,0 +1,57 @@
+$white:					#ffffff;
+$orange:				#fb6816;
+$purple:				#3a2064;
+$dark-gray:				#6a7177;
+$medium-gray:			#a9b6c1;
+$light-gray:			#ebeff3;
+$arrow-gray:			#d8e0e8;
+
+$extra-light:			#f6f9fa;
+$extra-x-light:			#f0f5f7;
+
+$phone-green:			#a4d65e;
+$twitter:				#69b6f2;
+$facebook:				#3a579a;
+
+$dark-orange:			#ab3c05;
+
+
+$montserrat: 'Montserrat', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+		.carousel {
+			height: 200px;
+			min-height: 100%;
+			.carousel-indicators {
+				li {
+					background-color: $dark-gray;
+				}
+			}
+			.carousel-inner {
+				height: 100%;
+				min-height: 100%;
+				background-color: #f0f5f7;
+				.item {
+					height: 100%;
+					min-height: 100%;
+					.carousel-caption {
+						.carousel_inner_text {
+							color: $dark-gray;
+							text-shadow: none;
+							font-size: 20px;
+						}
+						h6 {
+							color: $dark-gray;
+							font-size: 20px;
+							font-family: $montserrat;
+							text-shadow: none;
+						}
+						p {
+							color: $medium-gray;
+							text-shadow: none;
+						}
+					}
+					
+				}
+			}
+		}

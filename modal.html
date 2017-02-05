@@ -1,0 +1,41 @@
+      <!-- modal popup -->
+      <form class="modal fade form-inline" id="negoci" action="#" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" >
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/logo_small.png" alt="logo">
+            </div>
+            <div class="modal-body" style="font-size: 10px;">
+              <div data-step="1">
+                <div class="row one-nego" style="font-size: 14px">
+
+                </div>
+                <br>
+                <div class="form-modal text-center">
+                  <p class="lead"> Compl&eacute;tez votre adresse mail afin que nous puissions n&eacute;gocier pour vous une remise sur ce bien. </p>
+                   <div class="form-group">
+                       <input type="email" class="form-control" id="email_field" name="email" placeholder="ex: exemple@exemple.fr">
+                     </div>
+                     <button class="btn btn-primary js-btn-step disabled" data-orientation="next" id="submit_form">Valider votre demande &nbsp; <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
+					 <input type="hidden" name="price" id="form_price">
+					<input type="hidden" name="min_reduc" id="form_min_price">
+					<input type="hidden" name="max_reduc" id="form_max_price">
+					<input type="hidden" name="fiscalite" id="form_fiscalite">
+					<input type="hidden" name="name" id="form_name">
+					<input type="hidden" name="city" id="form_city">
+					<input type="hidden" name="lot" id="form_lot">
+               </div>
+             </div>
+             <div class="row hide" data-step="2">
+               <div class="modal-step-2">
+                <p>  <i class="fa fa-check" aria-hidden="true"></i> Bravo ! </p>
+                <p> Votre dossier nous est bien parvenu. Il va &ecirc;tre &eacute;tudi&eacute; par un de nos experts. </p>
+                <p> Nous allons reprendre contact avec vous dans quelques minutes. </p>
+                <p> Pour cela, consultez votre bo&icirc;te mail. </p>
+                </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </form>
