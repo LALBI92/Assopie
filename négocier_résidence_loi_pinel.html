@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>JeCompareImmo</title>
+  <!-- Meta Zone -->
+  	<meta name="description" content="Obtenez une remise substantielle sur votre programme immobilier loi Pinel" />
+	<meta name="robots" content="index, follow, all" />
+	<meta name="author" content="Digital Corsaire">
+	<meta name="publisher" content="Digital Corsaire">
+	<meta name="geo.placename" content="France">
+	<meta name="geo.region" content="FR">
+	<meta name="google" content="notranslate" /><meta name="keywords" content="immobilier loi Pinel">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">
+  <link rel="stylesheet" type="text/css" href="css/carousel.css">
+  <link rel="stylesheet" href="css/main3.css">
+
+  <script src="js/modernizr-2.7.1.js"></script>
+
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N5LQX53');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5LQX53"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo" href="index.html"><img src="img/logo_small.png" alt="Logo" style="width: 20%;"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+
+    <header>
+      <div class="container">
+	  <form class="form-inline" action="#" id="form" method="POST">
+        <div id="header_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="carousel-page">
+                <div class="row header-info">
+                  <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <h1> L'immobilier NEUF au meilleur prix</h1>
+                          <hr>
+                    <br />
+                    <p class="lead" >Obtenez une remise sur votre futur bien immobilier loi Pinel</p>
+                    <br />
+
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12">
+                        <div class="row">
+						<form class="form-inline" action="result.php">
+                          <div class="form-group">
+                              <!--<img src="img/arrows.png" class="arrow-header">-->
+							  <div class="col-md-6 col-xs-12 text-right" style="margin-bottom: 5px">
+								<label style="color: #fff;">Montant du bien que vous souhaitez acquérir :</label>
+							  </div>
+							  <div class="col-md-6 col-xs-12 col-sm-12 text-left form-info" style="margin-bottom: 5px">
+								<input type="text" class="form-control" id="price_input" >
+							  </div>
+							<div class="col-md-6 col-xs-12 text-right" style="margin-bottom: 5px">
+                              <label style="color: #fff;">Ville du bien :</label>
+							  </div>
+							  <div class="col-md-6 col-xs-12 col-sm-12 text-left form-info" style="margin-bottom: 5px">
+								<input type="text" class="form-control" name="city" >
+								</div>
+								<div class="col-md-6 col-xs-12 col-sm-12 text-right form-info" style="margin-bottom: 5px">
+								<label style="color: #fff;">Nom du programme :</label>
+								</div>
+								<div class="col-md-6 col-xs-12 col-sm-12 text-left form-info" style="margin-bottom: 5px">
+								<input type="text" class="form-control" name="name" >
+								</div>
+								<div class="col-md-6 col-xs-12 col-sm-12 text-right form-info" style="margin-bottom: 5px">
+								<label style="color: #fff;">Numéro du lot (facultatif) :</label>
+								</div>
+								<div class="col-md-6 col-xs-12 col-sm-12 text-left form-info" style="margin-bottom: 5px">
+								<input type="text" class="form-control" name="lot" >
+								</div>
+                            </div>
+                            <div class="btn btn-primary sm-marg" id="CalcBtn">Obtenir immédiatement une estimation &nbsp; <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div>
+						</form>
+                        </div><!--End Button Row-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-page">
+                <div class="row header-info">
+                  <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <p class="lead"> L'immobilier NEUF au meilleur prix </p>
+                          <hr>
+                    <br />
+                    <ul>
+                      <li class="active">
+                        <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                        <br>
+                        <p> RÉPONSE </p>
+                      </li>
+                      <li> <img src="img/arrow-banner.png" alt=""> </li>
+                      <li>
+                        <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+                        <br>
+                        <p> DOSSIER </p>
+                      </li>
+                      <li> <img src="img/arrow-banner.png" alt=""> </li>
+                      <li>
+                        <i class="fa fa-clipboard fa-2x" aria-hidden="true" style="padding-top: 19%;"></i>
+                        <br>
+                        <p>NÉGOCIATION</p>
+                      </li>
+                    </ul>
+                    <br />
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12">
+                        <div class="row">
+                         <p class="lead">Voici l'estimation de l'économie que vous pouvez obtenir, laissez nous votre mail pour avoir le montant précis </p>
+                         <div class="slide_two">
+                           <div class="slide_two_left col-md-6 col-md-offset-3 col-sm-12 col-xs-12" style="margin-bottom: 40px;">
+                             <img src="img/interval2.png" alt="interval">
+                             <p><span class="inter_left" id="result_min">6603 €</span><span class="inter_right" id="result_max">17608 €</span></p>
+                           </div>
+						   <div class="col-sm-12">
+							<div class="col-md-4 col-xs-12 col-sm-12 text-right form-info" style="margin-bottom: 5px">
+								<label style="color: #fff;">Votre email :</label>
+							</div>
+							<div class="col-md-4 text-left form-info" style="margin-bottom: 5px">
+								<input type="email" class="form-control" name="email" id="email_field">
+							</div>
+							<div class="col-md-4 text-left form-info" style="margin-bottom: 5px">
+								<a href="#header_carousel" data-slide="next" id="submit_form"><button class="btn btn-primary disabled">Valider votre dossier &nbsp; <i class="fa fa-check" aria-hidden="true"></i></button></a>
+							</div>
+								<input type="hidden" name="price" id="form_price">
+								<input type="hidden" name="min_reduc" id="form_min_price">
+								<input type="hidden" name="max_reduc" id="form_max_price">
+								<input type="hidden" name="fiscalite" id="form_fiscalite" value="Pinel">
+							</div>
+
+                         </div>
+                        </div><!--End Button Row-->
+                      </div>
+                    </div>
+                    <hr>
+                    <a href="#header_carousel" data-slide="prev"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> Revenir à la question précédente</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="carousel-page">
+                <div class="row header-info">
+                  <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <p class="lead"> L'immobilier NEUF au meilleur prix </p>
+                          <hr>
+                    <br />
+                    <ul>
+                      <li>
+                        <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                        <br>
+                        <p> RÉPONSE </p>
+                      </li>
+                      <li> <img src="img/arrow-banner.png" alt=""> </li>
+                      <li>
+                        <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+                        <br>
+                        <p> DOSSIER </p>
+                      </li>
+                      <li> <img src="img/arrow-banner.png" alt=""> </li>
+                      <li class="active">
+                        <i class="fa fa-clipboard fa-2x" aria-hidden="true" style="padding-top: 19%;"></i>
+                        <br>
+                        <p>NÉGOCIATION</p>
+                      </li>
+                    </ul>
+                    <br />
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12">
+                        <div class="row">
+                         <p class="lead"> Bravo !</p>
+                         <div class="slide_four">
+							<p class="lead">
+								Votre dossier nous est bien parvenu. Il va être étudié par un de nos experts.<br/>
+								Nous allons reprendre contact avec vous dans quelques minutes.<br/>
+								Pour cela, consultez votre boite mail.
+							</p>
+                         </div>
+                        </div><!--End Button Row-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+		</form>
+      </div>
+    </header>
+
+    <section id="main-info" class="pad-sm">
+      <div class="rnd"><i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i></div>
+	    <div class="container-fluid">
+		    <div class="row">
+			    <div class="col-sm-8" style="padding-right: 50px; padding-left: 50px;">
+				    <h2 class="purple_title"> Vous planifiez d’acheter un bien sur un programme immobilier neuf loi Pinel ? </h2>
+            <p> Vous avez repéré une annonce d’un bien immobilier qui vous plaît mais le prix vous semble encore élevé.
+          On vous a dit qu'on ne pouvait pas négocier le prix dans l'immobilier loi Pinel ?</p>
+            <p>Indispensable pour réussir son achat, la phase de négociation est souvent délicate lorsque l'on manque de connaissance.</p>
+            <p>JeCompareImmo vous permet de réaliser une économie sur l’achat de votre bien immobilier loi Pinel en négociant pour vous.</p>
+			    </div>
+
+		    </div>
+	    </div>
+    </section>
+
+
+    <!--Pricing-->
+    <section id="pricing" class="pad-lg text-center">
+     <section id="pricing" class="pad-lg">
+      <div class="vid">
+       <iframe width="90%" height="300" src="https://www.youtube.com/embed/l_YK-2yv9Ok" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="container">
+        <div class="row margin-40">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h2 class="purple_title" style="padding-top: 250px;">Nous négocions pour vous</h2>
+            <p class="gray_subtitle"></p>
+          </div>
+        </div>
+
+        <div class="row margin-50">
+          <div class="col-md-4 col-sm-12 each">
+            <img src="img/exchange.png" alt="exchange">
+            <h5> 8.500 € d’économie en moyenne par bien </h5>
+            <p>Nous savons comment vous aider à payer le juste prix</p>
+          </div>
+          <div class="col-md-4 col-sm-12 each">
+            <img src="img/montre.png" alt="montre">
+            <h5> Un délai de négociation de – 48 heures </h5>
+            <p> Vous obtenez notre proposition dans les 24h et votre dossier est traité 48 h après validation. </p>
+          </div>
+          <div class="col-md-4 col-sm-12 each">
+            <img src="img/france.png" alt="france et marqueur">
+            <h5> Nous couvrons 90 % du parc immobilier neuf </h5>
+            <p> Profitez des meilleures conditions d’achats négociées avec nos partenaires. </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="invite" class="pad-sm light-gray-bg">
+      <div class="rnd"><i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h2 class="purple_title">Nous avons négocié pour eux</h2>
+            <br />
+            <p class="gray_subtitle">Notre association intervient sur les programmes neufs et Pinel, les investissements en location meublée, les achats en nue-propriété et les lois Malraux ou monuments historiques..</p>
+            <br />
+
+            <div class="row">
+              <div class="grid">
+                <figure class="effect-sadie col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                  <img src="img/pinelnego1.png" alt="Givenchy Dahlia Divin" />
+                    <h2>Résidence Eden Square </h2>
+                    <p>Loi Pinel </p>
+                    <p>Prix de base : 204 800 €</p>
+                    <p> <strong>13 260 € de rabais</strong> </p>
+                </figure>
+                <figure class="effect-sadie col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                  <img src="img/pinelnego2.png" alt="Beauty blog stheels" />
+                    <h2>Residence Villa Eclair </h2>
+                    <p>Loi Pinel</p>
+                    <p>Prix de base : 259 000 € </p>
+                    <p> <strong> 7 800 € de rabais</strong> </p>
+                </figure>
+                <figure class="effect-sadie col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                  <img src="img/pinelnego3.png" alt="Franaud" />
+                   <h2>Résidence les Avelines</h2>
+                    <p>Loi Pinel</p>
+                    <p>Prix de base : 587 000 € </p>
+                    <p> <strong> 11 740 € de rabais </strong> </p>
+                </figure>
+              </div>
+            </div><!--End Form row-->
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="press" class="pad-sm">
+       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+ <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="carousel-caption">
+                    <div class="round_arrow_three"></div>
+                    <p class="carousel_inner_text">
+                     Mon conseiller me disait que les prix sur le neuf n’était pas négociable, nous avons obtenu 9300 euros d’économie grâce à Je Compare Immo.
+                    </p>
+                    <h6> Marc </h6>
+                    <p> Achat en septembre 2016</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-caption">
+                    <div class="round_arrow_three"></div>
+                    <p class="carousel_inner_text">
+                      Sans l’aide des équipes de Je Compare Immo nous aurions payé 13 460 euros trop cher notre appartement, merci pour votre travail !
+                    </p>
+                    <h6> Philippe et Claire </h6>
+                    <p> Achat en juillet 2016 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+          <ul>
+           <li><a href="http://www.jecompare.immo">Négocier un bien neuf</a></li>
+            <li><a href="http://www.jecompare.immo/négocier_résidence_loi_pinel.html">Négocier un bien en loi Pinel</a></li>
+			 <li><a href="http://jecompare.immo/CGU.html">Conditions générales d'utilisation</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+          <div class="social">
+            <button class="btn btn-social tel">
+			<a href="tel:+33173446760"><i class="fa fa-phone" aria-hidden="true"></i> 01 73 44 67 60</a>
+            </button>
+            
+            <p>Copyright © 2016, jecompare.immo</p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+	<script>
+
+	$('#price_input').keyup(function() {
+		var value = $(this).val();
+
+		if (isNaN(parseInt(value))) {
+			$('#CalcBtn').addClass('disabled');
+		} else {
+			$('#CalcBtn').removeClass('disabled');
+		}
+	});
+
+	$('#CalcBtn').click(function() {
+		 var val_percent1 = 4;
+		 var val_percent2 = 8;
+
+		var price = parseInt($('#price_input').val().replace(/\s+/g, ''));
+
+		var reduc_min = (val_percent1 / 100) * price;
+		var reduc_max = (val_percent2 / 100) * price;
+
+		$('#result_min').html(parseInt(reduc_min) + ' €');
+		$('#result_max').html(parseInt(reduc_max) + ' €');
+
+		$('#form_price').val(price);
+		$('#form_min_price').val(reduc_min);
+		$('#form_max_price').val(reduc_max);
+
+		if ($('#price_input').val() != '' && !isNaN(parseInt($('#price_input').val()))) {
+			if ($("input[name='name']").val() != '') {
+				if ($("input[name='city']").val() != '') {
+					$('#header_carousel').carousel('next');
+				} else {
+					$("input[name='city']").addClass('error');
+				}
+			} else {
+				$("input[name='name']").addClass('error');
+			}
+		}else {
+				$('#price_input').addClass('error');
+			}
+
+	});
+
+
+	$('#submit_form').click(function() {
+		var DATA = $('#form').serialize();
+		$.ajax({
+			type: "POST",
+			url: 'result.php',
+			data: DATA,
+			success: function(data){
+
+
+			},
+			error: function()  {
+				alert('erreur');
+			}
+		});
+
+	});
+
+	$('#email_field').change(function() {
+		var email = $(this).val();
+		if (validateEmail(email)) {
+			$('#submit_form').find('button').removeClass('disabled');
+		} else {
+			$('#submit_form').find('button').addClass('disabled');
+		}
+	});
+
+	$('#email_field').keyup(function() {
+		var email = $(this).val();
+		if (validateEmail(email)) {
+			$('#submit_form').find('button').removeClass('disabled');
+		} else {
+			$('#submit_form').find('button').addClass('disabled');
+		}
+	});
+
+	function validateEmail(email) {
+		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return re.test(email);
+	}
+
+
+	</script>
+
+
+    </body>
+</html>
