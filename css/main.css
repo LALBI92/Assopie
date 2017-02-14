@@ -113,7 +113,7 @@ header .carousel ul li i {
 }
 
 #press {
-  background-color: #f0f5f7;
+  background: #f0f5f7;
 }
 
 #pricing {position: relative; background-color: #fff;}
@@ -130,7 +130,7 @@ header .carousel ul li i {
   text-align: center;
 }
 .each h5 {
-  color: #3a2064;
+  color: #4f86c6;
   text-transform: uppercase;
 }
 #invite {position: relative;}
@@ -291,7 +291,7 @@ header .carousel ul li i {
 }
 
 .modal-content {
-  background-color:#3a2064;
+  background-color:#4f86c6;
   border-radius: 0;
 }
 
@@ -388,7 +388,7 @@ span, .lead {
 }
 
 .purple_title {
-  color: #3a2064;
+  color: #4f86c6;
   text-transform: uppercase;
 }
 .gray_subtitle {
@@ -611,7 +611,7 @@ a:hover, a:focus {
 
 .navbar {
     border: 0px solid rgba(0, 0, 0, 0);
-    background: #3a2064;
+    background: #4f86c6;
     margin: auto;
     min-height: 60px;
     padding-top: 8px;
@@ -648,7 +648,7 @@ a:hover, a:focus {
 
 .logo img {
 	margin-top: 6px;
-}
+	}
 
 
 

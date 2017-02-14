@@ -113,7 +113,7 @@ header .carousel ul li i {
 }
 
 #press {
-  background-color: #f0f5f7;
+  background: #ffffff url('../img/dot-pattern.svg') repeat
 }
 
 #pricing {position: relative; background-color: #fff;}
@@ -648,7 +648,7 @@ a:hover, a:focus {
 
 .logo img {
 	margin-top: 6px;
-}
+	}
 
 
 
@@ -656,7 +656,7 @@ a:hover, a:focus {
    Main styles
    ========================================================================== */
 header {
-  background: url(../img/banner_MH.jpg) no-repeat center center;
+  background: url(../img/banner.jpg) no-repeat center center;
   width: 100%;
   padding: 20px 10px 60px 10px;
   height: 95vh;
