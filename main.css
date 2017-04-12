@@ -284,16 +284,7 @@ header .carousel ul li i {
   font-weight: bold;
 }
 
-.modal-header img {
-  width: 40%;
-  display: block;
-  margin: 0 auto;
-}
 
-.modal-content {
-  background-color:#4f86c6;
-  border-radius: 0;
-}
 
 .choose {
   background-color: #fff;
@@ -317,38 +308,10 @@ button.close {
   opacity: 1;
 }
 
-.form-modal input[type=email] {
-  height: 40px;
-  width: 300px;
-  background-color: rgba(255, 0, 0, 0);
-  border: 1px solid #fff;
-  font-family: 'Raleway', sans-serif;
-}
 
-.form-modal input[type=email]::-webkit-input-placeholder {
-  color: #fff;
-}
 
-.form-modal p {
-  font-size: 16px;
-  text-align: center;
-}
 
-.form-modal .form-inline {
-  text-align: center;
-}
 
-.modal-step-2 p {
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  padding: 20px;
-}
-
-.modal-dialog {
-  height: 300px;
-  width: 900px;
-}
 
 /* ==========================================================================
    Global styles
@@ -1088,10 +1051,7 @@ h1 {
     margin-left: 30px;
   }
 
-  .modal-dialog {
-    height: 300px;
-    width: 95%;
-  }
+
 }
 
 
@@ -1216,10 +1176,7 @@ h1 {
     padding: 20px;
   }
 
-  .modal-dialog {
-    height: 300px;
-    width: 95%;
-  }
+  
 
 
 }
@@ -1330,10 +1287,7 @@ h1 {
     margin-bottom: 9%;
   }
 
-  .modal-dialog {
-    height: 300px;
-    width: 700px;
-  }
+ 
 }
 
 
